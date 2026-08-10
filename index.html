@@ -149,18 +149,21 @@
 
             <div class="projects-grid">
                 <article class="project-card">
-                    <img src="images/manga-shop.png" alt="Project 1 afbeelding" class="project-image" />
+                    <button class="project-image-button" type="button" aria-label="Bekijk Hololive Member Index afbeelding groter">
+                        <img src="images/hololive-member-index.png" alt="Hololive Member Index project afbeelding" class="project-image" />
+                    </button>
                     <div class="project-content">
-                        <h3>Manga Webshop</h3>
+                        <h3>Hololive Member Index</h3>
                         <p>
-                            Een webshopproject die ik op school heb gemaakt waarbij de focus op productoverzicht, winkelwagen,
-                            gebruikerservaring en een nette frontend/backend structuur zat.
+                            Dit is een python app waarmee je via een webscraper info kan ophalen over de leden van Hololive
                         </p>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <img src="images/touhou-game.png" alt="Project 2 afbeelding" class="project-image" />
+                    <button class="project-image-button" type="button" aria-label="Bekijk Touhou Starfall afbeelding groter">
+                        <img src="images/touhou-game.png" alt="Touhou Starfall project afbeelding" class="project-image" />
+                    </button>
                     <div class="project-content">
                         <h3>Touhou Starfall</h3>
                         <p>
@@ -169,7 +172,9 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <img src="images/hololivenotifier.png" alt="Project 3 afbeelding" class="project-image" />
+                    <button class="project-image-button" type="button" aria-label="Bekijk Holonotify App afbeelding groter">
+                        <img src="images/hololivenotifier.png" alt="Holonotify App project afbeelding" class="project-image" />
+                    </button>
                     <div class="project-content">
                         <h3>Holonotify App</h3>
                         <p>
@@ -249,9 +254,10 @@
     </div>
 </footer>
 
-<div class="modal" id="project-modal">
-    <div class="modal-content">
-        <button class="close-btn" id="close-modal">&times;</button>
+<div class="modal" id="project-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="close-btn" id="close-modal" type="button" aria-label="Sluit afbeelding">&times;</button>
+        <img src="" alt="" class="modal-image" id="modal-image" />
         <h3 id="modal-title"></h3>
         <p id="modal-description"></p>
     </div>
